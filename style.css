@@ -174,48 +174,48 @@ body {
 	background-size: 75px 60px;
 	width: 75px;
 	height: 60px;
-	bottom: 100px;
-	left: 140px;
+	bottom: 95px;
+	left: 135px;
 }
 #left {
 	background-image: url("../assets/leftbutton.png");
 	background-size: 75px 60px;
 	width: 75px;
 	height: 60px;
-	bottom: 100px;
-	left: 45px;
+	bottom: 95px;
+	left: 40px;
 }
 #top {
 	background-image: url("../assets/topbutton.png");
 	background-size: 60px 75px;
 	width: 60px;
 	height: 75px;
-	bottom: 140px;
-	left: 100px;
+	bottom: 135px;
+	left: 95px;
 }
 #down {
 	background-image: url("../assets/downbutton.png");
 	background-size: 60px 75px;
 	width: 60px;
 	height: 75px;
-	bottom: 45px;
-	left: 100px;
+	bottom: 40px;
+	left: 95px;
 }
 #A {
 	background-image: url("../assets/A.png");
 	background-size: 75px 75px;
 	width: 75px;
 	height: 75px;
-	bottom: 45px;
-	right: 125px;
+	bottom: 40px;
+	right: 120px;
 }
 #B {
 	background-image: url("../assets/B.png");
 	background-size: 75px 75px;
 	width: 75px;
 	height: 75px;
-	bottom: 100px;
-	right: 45px;
+	bottom: 95px;
+	right: 40px;
 }
 #right,
 #left,
@@ -251,6 +251,32 @@ body {
 	#B {
 		position: fixed;
 		display: initial;
+	}
+}
+@media screen and (max-width: 400px) {
+	#right {
+		bottom: 75px;
+		left: 115px;
+	}
+	#left {
+		bottom: 75px;
+		left: 20px;
+	}
+	#top {
+		bottom: 115px;
+		left: 75px;
+	}
+	#down {
+		bottom: 20px;
+		left: 75px;
+	}
+	#A {
+		bottom: 20px;
+		right: 100px;
+	}
+	#B {
+		bottom: 75px;
+		right: 20px;
 	}
 }
 

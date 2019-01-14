@@ -96,7 +96,7 @@ function centerScreen() {
 		screeny = my - (dh - mh) / 2;
 	}
 	// }
-	scroll(screenx, screeny);
+	scrollTo(screenx, screeny);
 }
 /////////////////
 ///// CONTROLS
@@ -610,11 +610,31 @@ document.addEventListener('keyup', releaseRight);
 
 // BUTTON RIGHT
 buttonRight = document.querySelector('#right');
-// CLICK
-buttonRight.addEventListener('mousedown', pressRight);
+// // CLICK
+// buttonRight.addEventListener('mousedown', pressRight);
+// // RELEASE
+// buttonRight.addEventListener('mouseup', releaseRight);
+// buttonRight.addEventListener('mouseleave', releaseRight);
+// TOUCH
+buttonRight.addEventListener('touchstart', function(e) {
+	e.preventDefault();
+	// console.log(e);
+	pressRight(e);
+});
 // RELEASE
-buttonRight.addEventListener('mouseup', releaseRight);
-buttonRight.addEventListener('mouseleave', releaseRight);
+buttonRight.addEventListener('touchend', function(e) {
+	e.preventDefault();
+	// console.log(e);
+	if (e.touches.length < 2) releaseRight(e);
+});
+// buttonRight.addEventListener('touchmove', function(e) {
+// 	e.preventDefault();
+// 	releaseRight(e);
+// });
+buttonRight.addEventListener('touchcancel', function(e) {
+	e.preventDefault();
+	releaseRight(e);
+});
 
 // ARROW LEFT
 // PRESS
@@ -624,11 +644,30 @@ document.addEventListener('keyup', releaseLeft);
 
 // BUTTON LEFT
 buttonLeft = document.querySelector('#left');
-// CLICK
-buttonLeft.addEventListener('mousedown', pressLeft);
+// // CLICK
+// buttonLeft.addEventListener('mousedown', pressLeft);
+// // RELEASE
+// buttonLeft.addEventListener('mouseup', releaseLeft);
+// buttonLeft.addEventListener('mouseleave', releaseLeft);
+// TOUCH
+buttonLeft.addEventListener('touchstart', function(e) {
+	e.preventDefault();
+	pressLeft(e);
+});
 // RELEASE
-buttonLeft.addEventListener('mouseup', releaseLeft);
-buttonLeft.addEventListener('mouseleave', releaseLeft);
+buttonLeft.addEventListener('touchend', function(e) {
+	e.preventDefault();
+	// console.log(e);
+	if (e.touches.length < 2) releaseLeft(e);
+});
+// buttonLeft.addEventListener('touchmove', function(e) {
+// 	e.preventDefault();
+// 	releaseLeft(e);
+// });
+buttonLeft.addEventListener('touchcancel', function(e) {
+	e.preventDefault();
+	releaseLeft(e);
+});
 
 // ARROW TOP
 document.addEventListener('keydown', pressJump);
@@ -636,6 +675,18 @@ document.addEventListener('keydown', pressJump);
 // BUTTON TOP / A
 buttonTop = document.querySelector('#top');
 buttonA = document.querySelector('#A');
-// CLICK
-buttonTop.addEventListener('mousedown', pressJump);
-buttonA.addEventListener('mousedown', pressJump);
+// // CLICK
+// buttonTop.addEventListener('mousedown', pressJump);
+// buttonA.addEventListener('mousedown', pressJump);
+// TOUCH
+buttonTop.addEventListener('touchstart', function(e) {
+	e.preventDefault();
+	pressJump(e);
+});
+buttonA.addEventListener('touchstart', function(e) {
+	e.preventDefault();
+	pressJump(e);
+});
+document.querySelector('#B').addEventListener('click', function(e) {
+	if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+});
