@@ -268,7 +268,7 @@ function animIcon() {
 				}
 			).onfinish = function() {
 				cvLink.addEventListener('click', function() {
-					open('https://nrcaz.github.io');
+					open('https://nrcaz.github.io/CV');
 				});
 			};
 		};
