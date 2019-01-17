@@ -1,7 +1,7 @@
 # Mario-Portfolio
 A small mario level as an interactive Portfolio
 
-https://nrcaz.github.io/mario-portfolio/
+[Mario portfolio](https://nrcaz.github.io/portfolio/)
 
 This is 100% Vanilla JavaScript without library / framework nor game engine / software.
 
