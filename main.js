@@ -268,7 +268,7 @@ function animIcon() {
 				}
 			).onfinish = function() {
 				cvLink.addEventListener('click', function() {
-					open('http://nicholas-rossette.epizy.com/CV/');
+					open('https://nrcaz.github.io');
 				});
 			};
 		};
