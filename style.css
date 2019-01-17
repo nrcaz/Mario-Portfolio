@@ -170,7 +170,7 @@ body {
 /***********************************/
 
 #right {
-	background-image: url("../assets/rightbutton.png");
+	background-image: url("img/rightbutton.png");
 	background-size: 75px 60px;
 	width: 75px;
 	height: 60px;
@@ -178,7 +178,7 @@ body {
 	left: 135px;
 }
 #left {
-	background-image: url("../assets/leftbutton.png");
+	background-image: url("img/leftbutton.png");
 	background-size: 75px 60px;
 	width: 75px;
 	height: 60px;
@@ -186,7 +186,7 @@ body {
 	left: 40px;
 }
 #top {
-	background-image: url("../assets/topbutton.png");
+	background-image: url("img/topbutton.png");
 	background-size: 60px 75px;
 	width: 60px;
 	height: 75px;
@@ -194,7 +194,7 @@ body {
 	left: 95px;
 }
 #down {
-	background-image: url("../assets/downbutton.png");
+	background-image: url("img/downbutton.png");
 	background-size: 60px 75px;
 	width: 60px;
 	height: 75px;
@@ -202,7 +202,7 @@ body {
 	left: 95px;
 }
 #A {
-	background-image: url("../assets/A.png");
+	background-image: url("img/A.png");
 	background-size: 75px 75px;
 	width: 75px;
 	height: 75px;
@@ -210,7 +210,7 @@ body {
 	right: 120px;
 }
 #B {
-	background-image: url("../assets/B.png");
+	background-image: url("img/B.png");
 	background-size: 75px 75px;
 	width: 75px;
 	height: 75px;
