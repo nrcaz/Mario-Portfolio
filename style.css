@@ -37,7 +37,7 @@ body {
 	position: absolute;
 	width: 1500px;
 	height: 599px;
-	background-image: url("../assets/marioBG2.png");
+	background-image: url("img/marioBG2.png");
 	background-position-y: -245px;
 	background-size: 1500px 844px;
 	background-repeat: no-repeat;
