@@ -1,7 +1,7 @@
 # Mario-Portfolio
 A small mario level as an interactive Portfolio
 
-http://nicholas-rossette.epizy.com/mario-portfolio/
+https://nrcaz.github.io/mario-portfolio/
 
 This is 100% Vanilla JavaScript without library / framework nor game engine / software.
 
