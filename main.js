@@ -268,7 +268,7 @@ function animIcon() {
 				}
 			).onfinish = function() {
 				cvLink.addEventListener('click', function() {
-					open('https://nrcaz.github.io/CV');
+					open('https://nicholas-rossette.com/CV');
 				});
 			};
 		};
@@ -601,6 +601,10 @@ let iconCount = 0;
 // initialize mario model and screen position
 renderIdle();
 centerScreen();
+// center screen on screen rotation
+screen.orientation.addEventListener('change', function() {
+	setTimeout(centerScreen, 10);
+});
 
 // ARROW RIGHT
 // PRESS
@@ -627,10 +631,6 @@ buttonRight.addEventListener('touchend', function(e) {
 	// console.log(e);
 	if (e.touches.length < 2) releaseRight(e);
 });
-// buttonRight.addEventListener('touchmove', function(e) {
-// 	e.preventDefault();
-// 	releaseRight(e);
-// });
 buttonRight.addEventListener('touchcancel', function(e) {
 	e.preventDefault();
 	releaseRight(e);
@@ -660,10 +660,6 @@ buttonLeft.addEventListener('touchend', function(e) {
 	// console.log(e);
 	if (e.touches.length < 2) releaseLeft(e);
 });
-// buttonLeft.addEventListener('touchmove', function(e) {
-// 	e.preventDefault();
-// 	releaseLeft(e);
-// });
 buttonLeft.addEventListener('touchcancel', function(e) {
 	e.preventDefault();
 	releaseLeft(e);
