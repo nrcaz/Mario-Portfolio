@@ -603,7 +603,7 @@ renderIdle();
 centerScreen();
 // center screen on screen rotation
 screen.orientation.addEventListener('change', function() {
-	setTimeout(centerScreen, 10);
+	setTimeout(centerScreen, 200);
 });
 
 // ARROW RIGHT
