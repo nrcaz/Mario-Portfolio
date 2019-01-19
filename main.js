@@ -93,9 +93,10 @@ function centerScreen() {
 	if (my < (dh - mh) / 2) {
 		screeny = 0;
 	} else {
-		screeny = my - (dh - mh) / 2;
+		screeny = my - (dh - mh) / 2 - 83;
 	}
 	// }
+	console.log(screeny);
 	scrollTo(screenx, screeny);
 }
 /////////////////
