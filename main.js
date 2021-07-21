@@ -269,7 +269,7 @@ function animIcon() {
 				}
 			).onfinish = function() {
 				cvLink.addEventListener('click', function() {
-					open('https://nicholas-rossette.com/CV');
+					open('https://www.nrcaz.net/CV');
 				});
 			};
 		};
